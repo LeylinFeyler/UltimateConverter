@@ -29,9 +29,9 @@ namespace UltimateConverter
                 case "-v":
                     factory = new VideoConverterFactory();
                     break;
-                //case "-a":
-                //    factory = new AudioConverterFactory();
-                //    break;
+                case "-a":
+                   factory = new AudioConverterFactory();
+                   break;
                 //case "-f":
                 //    factory = new FileConverterFactory();
                 //    break;
