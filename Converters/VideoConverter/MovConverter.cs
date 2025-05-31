@@ -16,7 +16,7 @@ namespace UltimateConverter.Converters.VideoConverter
             foreach (string file in files)
             {
                 videoFile = file.Trim(Path.GetExtension(file).ToCharArray());
-                ExternalToolRunner.RunCommand("HandBrakeCLI", "--input " + file + " --output " + videoFile + ".mov");
+                ExternalToolRunner.RunCommand("ffmpeg", "-i " + file + " " + videoFile + ".mov");
             }
             Console.WriteLine($"Converted successfully!");
         }
